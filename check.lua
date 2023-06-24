@@ -1,5 +1,5 @@
 local a = identifyexecutor()
-if a == "Fluxus Android" then
+if a == "Fluxus" then
   print("flux")
   loadstring(game:HttpGet"https://raw.githubusercontent.com/weishanteam/New-delta/main/bai.lua")()
 else
