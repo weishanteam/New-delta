@@ -553,3 +553,6 @@ Drawing.new = newcclosure(function(v)
        })
     end
 end)
+function identifyexecutor()
+return "微山Executor V0"
+end
