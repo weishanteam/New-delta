@@ -1,1 +1,4 @@
-print("这是一个测试")
+function wsexec(dm)
+runcode(dm)
+end
+wsexec([[print("OK")]])
