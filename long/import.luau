@@ -4,9 +4,9 @@ end
 function _G.wsclipboard()
 _G.wsexec(getclipboard())
 end
-function identifyexecutor()
+_G.wsexec([[function identifyexecutor()
 return "syn"
-end
+end]])
 _G["identifyexecutor"] = identifyexecutor
 _G.wsexec([[print("OK")]])
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
