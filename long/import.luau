@@ -1,12 +1,15 @@
+local a=[[
+function identifyexecutor()
+return "syn"
+end
+
+]]
 function _G.wsexec(dm)
-runcode(dm)
+runcode(a..dm)
 end
 function _G.wsclipboard()
 _G.wsexec(getclipboard())
 end
-_G.wsexec([[function identifyexecutor()
-return "syn"
-end]])
 _G["identifyexecutor"] = identifyexecutor
 _G.wsexec([[print("OK")]])
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
