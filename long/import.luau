@@ -1,6 +1,6 @@
 local a=[[
 function identifyexecutor()
-return "syn"
+return "Synapse X"
 end
 
 ]]
