@@ -11,10 +11,6 @@ end
 function _G.wsclipboard()
 _G.wsexec(getclipboard())
 end
-_G["identifyexecutor"] = identifyexecutor
-_G.wsexec([[print("OK")]])
-
-
 
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
     if msg:match("/e exec open") then
