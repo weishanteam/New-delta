@@ -10,7 +10,7 @@ end
 function _G.wsclipboard()
 _G.wsexec(getclipboard())
 end
-function _G.ws.Get.ClipBoard()
+function _G.ws_Get_ClipBoard()
 return getclipboard()
 end
 _G["identifyexecutor"] = identifyexecutor
