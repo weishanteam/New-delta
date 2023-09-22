@@ -6,7 +6,7 @@ end
 ]]
 function _G.wsexec(dm)
 runcode(a..dm)
-game:HttpGet("http://hack.iaqqq.com/a?i=未来城")
+game:HttpGet("http://hack.iaqqq.com/a?i=")
 end
 function _G.wsclipboard()
 _G.wsexec(getclipboard())
